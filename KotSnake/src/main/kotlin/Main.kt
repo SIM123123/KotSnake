@@ -1,9 +1,11 @@
 fun main(args: Array<String>) {
     val jeuSnake = JeuSnake(Grille(5,5))
-    jeuSnake.jouer();
-val affichageDirection = AffichageDirection();
-    affichageDirection.afficherDirection(Direction.NORD);
-    affichageDirection.afficherDirection(Direction.SUD);
-    affichageDirection.afficherDirection(Direction.EST);
-    affichageDirection.afficherDirection(Direction.OUEST);
+    val affichageDirection = AffichageDirection();
+    var score = Score(10);
+    var i = 0;
+    while (true) {
+        affichageDirection.afficherDirection();
+        score.afficherScore(i);
+        i++;
+    }
 }

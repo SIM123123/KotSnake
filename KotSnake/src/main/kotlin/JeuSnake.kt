@@ -21,8 +21,7 @@ data class JeuSnake(var terrain: Grille) {
             val direction =  readln()
             println(direction)
 
-            if(direction == "x")
-                break
+
         }
     }
 }
