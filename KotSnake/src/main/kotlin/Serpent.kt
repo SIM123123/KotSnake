@@ -1,8 +1,6 @@
 data class Serpent (var X: Int, var Y: Int) {
     var parties  = ArrayList<Corps>()
     private var historiqueDeplacement:Coordonnee = Coordonnee(1, 0)
-    private var  nbFoisDirection: Int = 0
-    private  var nbMouvement: Int = 0
     init{
         parties.add(Corps(X,Y))
     }
@@ -18,7 +16,6 @@ data class Serpent (var X: Int, var Y: Int) {
         }
         return Coordonnee(0,0)
     }
-
     fun deplacer( direction: Coordonnee){
         val tete = parties[0]
         val nouvelleTete = Corps(tete.x + direction.x, tete.y + direction.y)
