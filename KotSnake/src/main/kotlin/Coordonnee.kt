@@ -1,0 +1,1 @@
+ open class Coordonnee(var x: Int, var y: Int)

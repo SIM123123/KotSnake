@@ -1,6 +1,3 @@
-class Case ( _X: Int, _Y: Int){
-    var X = _X
-    var Y = _Y
+ class Case (pX: Int, pY: Int) : Coordonnee(pX,pY){
     var Pomme = false
-    var coordonner = "${X}, ${Y}"
 }
