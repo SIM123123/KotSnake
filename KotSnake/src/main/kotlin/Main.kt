@@ -1,13 +1,9 @@
 fun main(args: Array<String>) {
-    val jeuSnake = JeuSnake(Grille(5,5))
-    /*
-    val affichageDirection = AffichageDirection();
-    var score = Score(10);
-    var i = 0;
-    while (true) {
-        affichageDirection.afficherDirection();
-        score.afficherScore(i);
-        i++;
-    }*/
+    println("Bonjour, veuillez entrer les dimensions de la grille: ")
+    print("Largeur (x): ")
+    val x = readln().toInt()
+    print("Hauteur (y): ")
+    val y = readln().toInt()
+    val jeuSnake = JeuSnake(Grille(x, y))
     jeuSnake.jouer()
 }

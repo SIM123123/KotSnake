@@ -1,3 +1,11 @@
+/**
+ * Classe Grille
+ * @param largeur
+ * @param hauteur
+ * @property grille
+ * @property plaine
+ * @constructor
+ */
 data class Grille (
     var largeur: Int,
     var hauteur: Int) {
@@ -8,9 +16,9 @@ data class Grille (
         var i = 1
         var index = 0
         grille = Array(largeur * hauteur + 1) { Case(0, 0) }
-        while (i <= hauteur) {
+        while (i <= largeur) {
             var j = 1
-            while(j <= largeur){
+            while(j <= hauteur){
                 grille[index] = Case(i,j)
                 index++
                 j++
@@ -18,6 +26,4 @@ data class Grille (
             i++
         }
     }
-
-
 }
